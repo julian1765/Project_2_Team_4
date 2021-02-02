@@ -79,7 +79,7 @@ We used the sigmoid curve as the activation function, binary cross-entropy as th
 6. Support Vector Classifier<br>
 7. XGBoost Classifier
 <br>
-Below is the results of accuracy scores of the five companies.
+Below is the result of accuracy scores of the five companies.
 <br>
 <img width="800" alt="classification_scores.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/classification_scores.PNG">
 <br>
