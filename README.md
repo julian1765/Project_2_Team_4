@@ -17,7 +17,8 @@ To track this correlation, we needed a large number of data points to overlay wi
 
 ## 2. Initial Method
 At first, we examined a straightforward method, where the only X feature is sentiment scores, and y values are classes such as 1 when the closing price moves up and 0 when it goes down. <br>
-![data_shape3](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape3.PNG)<br>
+<img width="150" alt="data_shape3.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape3.PNG">
+<br>
 We applied the following 5 classification models to the data, but as seen in the accuracy scores, none of them performed well.<br>
 Decision Tree Classifier    53.72%<br>
 Logistic Regression         52.72%<br>
@@ -50,9 +51,9 @@ We deployed this methodology in several algorithms in the context of both regres
 ### (1) Regression Analysis
 
 For regression analysis purposes, we used a 20-day rolling average of a stock’s closing price as the first feature and the 20-day rolling average of the sentiment score of the company as the second feature. The shapes of data used for the one-feature model and the two-feature model are below.<br>
-![data_shape1](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape1.PNG)
-<img width="100" alt="data_shape2.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape2.PNG">
-![msft_scatter](https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_scatter.PNG)
+<img width="150" alt="data_shape1.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape1.PNG">
+<img width="150" alt="data_shape2.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape2.PNG">
+<img width="150" alt="msft_scatter.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_scatter.PNG">
 <br>
 We applied these two types of data to (1) Dense Neural Network and (2) Long Short-Term Memory (LSTM) model. To visualize which of the one-feature model or the two-feature model predicts future stock price movements better, we juxtapose (a) the historical stock price movements, (b) predictions by the one-feature model, and (c) predictions by the two-feature model as below for both of the Dense Neural Network and Long Short-Term Memory Model. As seen in the graphs for Microsoft, for both algorithms, the two-feature model demonstrated a better ability of tracking actual stock performance (i.e., y-test) over the single-feature model. This means adding sentiment scores as one of X features could improve the stock price predictions based on historical stock prices. For the other four companies, however, we could not find meaningful improvements in the two-feature model. <br>
 ![msft_dnn](https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_dnn.png)
@@ -64,8 +65,8 @@ We applied these two types of data to (1) Dense Neural Network and (2) Long Shor
 ### (2) Classification Analysis
 
 In tandem to the regression analysis that we ran, we also encoded the stock closing prices into trading signals in order to use them in a classification framework.  The shapes of data used for the one-feature model and the two-feature model are below.<br>
-![data_shape4](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape4.PNG)
-![data_shape5](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape5.PNG)
+<img width="150" alt="data_shape4.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape4.PNG">
+<img width="150" alt="data_shape5.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape5.PNG">
 <br>
 
 We used the sigmoid curve as the activation function, binary cross-entropy as the loss function, and accuracy as our leading metric. In addition to the Dense Neural Network and the Long Short-Term Memory model, we applied the initial five models, with respect to which we tried all of the ordinary one-time application, the cross validation, and the parameter optimization (only for the SVC). In total, the following seven models are applied:
@@ -79,7 +80,7 @@ XGBoost Classifier
 <br>
 Below is the results of accuracy scores of the five companies.
 <br>
-![classification_scores](https://github.com/julian1765/Project_2_Team_4/blob/main/images/classification_scores.PNG)
+<img width="800" alt="classification_scores.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/classification_scores.PNG">
 <br>
 While we did see an improvement in each model’s accuracy scores in majority cases, in most cases, it fell within the ‘flip of a coin’ category. But, the ability of social media sentiment to improve the model was still well demonstrated in the classification framework. 
 
