@@ -56,11 +56,11 @@ For regression analysis purposes, we used a 20-day rolling average of a stock’
 <img width="150" alt="data_shape2.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape2.PNG">
 
 <br>
-We applied these two types of data to (1) Dense Neural Network and (2) Long Short-Term Memory (LSTM) model. To visualize which of the one-feature model or the two-feature model predicts future stock price movements better, we juxtapose (a) the historical stock price movements, (b) predictions by the one-feature model, and (c) predictions by the two-feature model as below for both of the Dense Neural Network and Long Short-Term Memory Model. As seen in the graphs for Microsoft, for both algorithms, the two-feature model demonstrated a better ability of tracking actual stock performance (i.e., y-test) over the single-feature model. This means adding sentiment scores as one of X features could improve the stock price predictions based on historical stock prices. For the other four companies, however, we could not find meaningful improvements in the two-feature model. <br>
+We applied these two types of data to (1) Dense Neural Network and (2) Long Short-Term Memory (LSTM) model. To visualize which of the one-feature model or the two-feature model predicts future stock price movements better, we juxtapose (a) the historical stock price movements, (b) predictions by the one-feature model, and (c) predictions by the two-feature model as below for both of the Dense Neural Network and Long Short-Term Memory Model.  <br>
 <img width="600" alt="msft_dnn.png" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_dnn.png">
-<br>
 <img width="600" alt="msft_lstm.png" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_lstm.png">
-
+<br>
+As seen in the graphs for Microsoft, for both algorithms, the two-feature model demonstrated a better ability of tracking actual stock performance (i.e., y-test) over the single-feature model. This means adding sentiment scores as one of X features could improve the stock price predictions based on historical stock prices. For the other four companies, however, we could not find meaningful improvements in the two-feature model. <br>
 
 ### (2) Classification Analysis
 
