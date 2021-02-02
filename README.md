@@ -51,7 +51,7 @@ We deployed this methodology in several algorithms in the context of both regres
 ### (1) Regression Analysis
 
 For regression analysis purposes, we used a 20-day rolling average of a stock’s closing price as the first feature and the 20-day rolling average of the sentiment score of the company as the second feature. The shapes of data used for the one-feature model and the two-feature model are below.<br>
-<img width="140" alt="data_shape1.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape1.PNG">
+<img width="120" alt="data_shape1.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape1.PNG">
 <img width="150" alt="data_shape2.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape2.PNG">
 <img width="400" alt="msft_scatter.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_scatter.PNG">
 <br>
@@ -65,7 +65,7 @@ We applied these two types of data to (1) Dense Neural Network and (2) Long Shor
 ### (2) Classification Analysis
 
 In tandem to the regression analysis that we ran, we also encoded the stock closing prices into trading signals in order to use them in a classification framework.  The shapes of data used for the one-feature model and the two-feature model are below.<br>
-<img width="150" alt="data_shape4.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape4.PNG">
+<img width="100" alt="data_shape4.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape4.PNG">
 <img width="150" alt="data_shape5.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape5.PNG">
 <br>
 
