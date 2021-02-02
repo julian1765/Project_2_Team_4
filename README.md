@@ -33,7 +33,7 @@ In order to see if the models would perform better (1) with a different set of t
 
 #### (1) Cross Validation:
 
-Cross validation is a way to reduce the possibility that performance of a model is affected by bias and randomness when splitting data into train and test data. Suppose we use the train_test_split library to divide a dataset into train data and test data. In this case, even if we apply a model and get a good accuracy score, that good performance might depend upon how the dataset was split, which is random. To alleviate this randomness, cross validation repeats dividing a dataset and applying a model for a specified number of times such that the dataset is divided differently each time and each data point is allocated to test data only once. By calculating the average of scores of all iterations of cross validation, we can have a more unbiased score of a model.
+Cross validation is a way to reduce the possibility that performance of a model is affected by bias and randomness when splitting data. Suppose we use the train_test_split library to divide a dataset into train data and test data. In this case, even if we apply a model and get a good accuracy score, that good performance might depend upon how the dataset was split, which is random. To alleviate this randomness, cross validation repeats dividing a dataset and applying a model for a specified number of times such that the dataset is divided differently each time and each data point is allocated to test data only once. By calculating the average of scores of all iterations of cross validation, we can have a more unbiased score of a model.
 
 #### (2) Grid Search:
 
@@ -44,7 +44,8 @@ Even after attempting the cross validation and the grid search, accuracy scores 
 
 ## 3. Next Method: Comparing Performances of 1 Feature Model and 2 Feature Model
 
-Using sentiment scores as the only independent value, we could not find a meaningful relationship between sentiment scores and stock price up and down movements. Then, we tried another method: comparing performances of a model with 1 feature (historical stock prices) and the one with 2 features (historical stock prices and sentiment scores). The background of the method is as follows. Stock prices are not determined only by sentiment scores. Many features such as seasonality and population come into play, among which stock prices in the past are probably one of the primary features affecting future stock prices most. If sentiment scores have some relationship with stock price movements in a predictable and learnable way, predictions of the 2-feature model would be better than those of the 1-feature model, regardless of regression analyses or classification analyses.
+Finding no meaningful relationship by the initial method, we tried another method: comparing performances of a model with 1 feature (historical stock prices) and the one with 2 features (historical stock prices and sentiment scores). <br>
+The background of the method is as follows. Stock prices are not determined only by sentiment scores. Many features come into play, among which historical stock prices are probably the primary feature. If sentiment scores have some relationship with stock price movements in a predictable and learnable way, predictions of the 2-feature model would be better than those of the 1-feature model, regardless of regression analyses or classification analyses.
 
 We deployed this methodology in several algorithms in the context of both regression or classification as explained below.
 
