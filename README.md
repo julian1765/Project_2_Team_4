@@ -20,11 +20,11 @@ At first, we examined a straightforward method, where the only X feature is sent
 <img width="150" alt="data_shape3.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape3.PNG">
 <br>
 We applied the following 5 classification models to the data, but as seen in the accuracy scores, none of them performed well.<br>
-Decision Tree Classifier    53.72%<br>
-Logistic Regression         52.72%<br>
-Random Forest Classifier    54.33%<br>
-Support Vector Classifier   53.52%<br>
-XGBoost Classifier          53.92%<br>
+1. Decision Tree Classifier    53.72%<br>
+2. Logistic Regression         52.72%<br>
+3. Random Forest Classifier    54.33%<br>
+4. Support Vector Classifier   53.52%<br>
+5. XGBoost Classifier          53.92%<br>
 
 
 ### Refining the Models:
@@ -70,14 +70,14 @@ In tandem to the regression analysis that we ran, we also encoded the stock clos
 <img width="400" alt="msft_scatter.PNG" src="https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_scatter.PNG">
 <br>
 
-We used the sigmoid curve as the activation function, binary cross-entropy as the loss function, and accuracy as our leading metric. In addition to the Dense Neural Network and the Long Short-Term Memory model, we applied the initial five models, with respect to which we tried all of the ordinary one-time application, the cross validation, and the parameter optimization (only for the SVC). In total, the following seven models are applied:
-Dense Neural Network
-Long Short-Term Memory Model
-Decision Tree Classifier
-Logistic Regression
-Random Forest Classifier
-Support Vector Classifier
-XGBoost Classifier
+We used the sigmoid curve as the activation function, binary cross-entropy as the loss function, and accuracy as our leading metric. In addition to the Dense Neural Network and the Long Short-Term Memory model, we applied the initial five models, with respect to which we tried all of the ordinary one-time application, the cross validation, and the parameter optimization (only for the SVC). In total, the following seven models are applied:<br>
+1. Dense Neural Network<br>
+2. Long Short-Term Memory Model<br>
+3. Decision Tree Classifier<br>
+4. Logistic Regression<br>
+5. Random Forest Classifier<br>
+6. Support Vector Classifier<br>
+7. XGBoost Classifier
 <br>
 Below is the results of accuracy scores of the five companies.
 <br>
