@@ -17,13 +17,13 @@ To track this correlation, we needed a large number of data points to overlay wi
 
 ## 2. Initial Method
 At first, we examined a straightforward method, where the only X feature is sentiment scores, and y values are classes such as 1 when the closing price moves up and 0 when it goes down. <br>
-![data_shape3](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape3.PNG)
-We applied the following 5 classification models to the data, but as seen in the accuracy scores, none of them performed well.
-Decision Tree Classifier	 53.72%
-Logistic Regression		 52.72%
-Random Forest Classifier	 54.33%
-Support Vector Classifier	 53.52%
-XGBoost Classifier		 53.92%
+![data_shape3](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape3.PNG)<br>
+We applied the following 5 classification models to the data, but as seen in the accuracy scores, none of them performed well.<br>
+Decision Tree Classifier    53.72%<br>
+Logistic Regression         52.72%<br>
+Random Forest Classifier    54.33%<br>
+Support Vector Classifier   53.52%<br>
+XGBoost Classifier          53.92%<br>
 
 
 ### Refining the Models:
@@ -52,6 +52,7 @@ We deployed this methodology in several algorithms in the context of both regres
 For regression analysis purposes, we used a 20-day rolling average of a stock’s closing price as the first feature and the 20-day rolling average of the sentiment score of the company as the second feature. The shapes of data used for the one-feature model and the two-feature model are below.<br>
 ![data_shape1](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape1.PNG)
 ![data_shape2](https://github.com/julian1765/Project_2_Team_4/blob/main/images/data_shape2.PNG)
+![msft_scatter](https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_scatter.PNG)
 <br>
 We applied these two types of data to (1) Dense Neural Network and (2) Long Short-Term Memory (LSTM) model. To visualize which of the one-feature model or the two-feature model predicts future stock price movements better, we juxtapose (a) the historical stock price movements, (b) predictions by the one-feature model, and (c) predictions by the two-feature model as below for both of the Dense Neural Network and Long Short-Term Memory Model. As seen in the graphs for Microsoft, for both algorithms, the two-feature model demonstrated a better ability of tracking actual stock performance (i.e., y-test) over the single-feature model. This means adding sentiment scores as one of X features could improve the stock price predictions based on historical stock prices. For the other four companies, however, we could not find meaningful improvements in the two-feature model. <br>
 ![msft_dnn](https://github.com/julian1765/Project_2_Team_4/blob/main/images/msft_dnn.png)
