@@ -48,9 +48,9 @@ Even after applying cross validation and the grid search, accuracy scores of the
 
 ## 3. Next Method: Comparing Performances of 1 Feature Model and 2 Feature Model
 
-Given that we were unable to derive any useful information using only a single feature, we decided to introduce a model with two features (historical stock prices and sentiment scores) and compare the performance back to the original models to see if there was any meaningful improvement. <br>
+Given that we were unable to derive any useful information using sentiment scores as the only X feature, we decided to abandon the method. As the next method, we compared performances between the following two models and see if there was any meaningful improvement: (1) a model with one feature (historical stock prices) and (2) a model with two features (historical stock prices and sentiment scores).<br>
 
-Our reasoning for adding the second feature is as follows. Stock prices are not determined only by sentiment scores. Many features come into play, among which historical stock prices are probably the primary feature. If sentiment scores have some relationship with stock price movements in a predictable and learnable way, predictions of the one-feature model would be better than those of the two-feature model, regardless of regression analyses or classification analyses.
+Our reasoning for adding the second feature is as follows. Stock prices are not determined only by sentiment scores. Many features come into play, among which historical stock prices are probably the primary feature. If sentiment scores have some relationship with stock price movements in a predictable and learnable way, predictions of the two-feature model would be better than those of the one-feature model, regardless of regression analyses or classification analyses.
 
 We deployed this methodology in several algorithms in the context of both regression or classification as explained below.
 
